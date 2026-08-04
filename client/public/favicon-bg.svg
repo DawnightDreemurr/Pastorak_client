@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <!-- 背景（关键） -->
+    <rect width="64" height="64" rx="14" fill="#0f172a"/>
+
+    <!-- 中间你的原始 logo -->
+    <g transform="translate(8,8) scale(0.75)">
+        <!-- 这里替换为你的原始 facicon.svg 内容 -->
+        <!-- 示例： -->
+        <path d="M..." fill="#FACC15"/>
+    </g>
+</svg>

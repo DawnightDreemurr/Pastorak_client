@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "primeicons/primeicons.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --transition-theme: 500ms ease-in-out;
+}
+
+@layer base {
+
+  /* 🟢 添加 View Transitions 核心样式 */
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+  }
+
+
+  /* 可选：如果你还是觉得页面元素需要微小的过渡，只保留背景色和文字颜色 */
+  body {
+    transition: background-color 0.2s, color 0.2s;
+  }
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+}
